@@ -9,8 +9,6 @@ function Nav() {
     text-align: center;
     padding: 1rem 1.5rem;
     background-color: white;
-    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     ${breakpoint('tablet')`
       flex-direction: row;
       text-align: left;
@@ -42,6 +40,8 @@ function Nav() {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-left: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
     &:hover {
       --tw-text-opacity: 1;
       color: rgba(29, 78, 216, var(--tw-text-opacity));

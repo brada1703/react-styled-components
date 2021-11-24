@@ -1,6 +1,5 @@
 import Article from "./components/article";
 import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint';
 
 const Blog = () => {
   const articles = [
@@ -33,16 +32,40 @@ const Blog = () => {
     }
   ];
 
+  const HeaderDiv = styled.div`
+    padding: 1rem;
+  `
+
+  const HeaderH2 = styled.h2`
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin:0;
+  `
+  const HeaderP = styled.p`
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+    padding-bottom: 1rem;
+    margin:0;
+  `
+
+  const Section = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+  `
+
   return (
     <>
-      <div className="p-4">
+      <HeaderDiv>
         <header>
-          <h2 className="font-bold text-3xl leading-10">Recent publications</h2>
-          <p className="text-gray-400 pb-4">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+          <HeaderH2>Recent publications</HeaderH2>
+          <HeaderP>Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</HeaderP>
         </header>
         <hr />
-      </div>
-      <section className="flex flex-wrap justify-around p-4">
+      </HeaderDiv>
+      <Section>
         {
           articles.map((article, index) => {
             let info = { ...article, index }
@@ -51,7 +74,7 @@ const Blog = () => {
             );
           })
         }
-      </section>
+      </Section>
     </>
   );
 }
