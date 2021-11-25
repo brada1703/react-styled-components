@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
-function Nav() {
-  const Nav = styled.nav`
+const Nav = styled.nav`
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     display: flex;
     flex-direction: column;
@@ -16,14 +15,14 @@ function Nav() {
       align-items: baseline;
     `}
   `
-  const HomeDiv = styled.div`
+const HomeDiv = styled.div`
     margin-bottom: 0;
     ${breakpoint('tablet')`
       margin-bottom: 0.5rem;
     `}
   `
 
-  const Home = styled.a`
+const Home = styled.a`
     font-size: 1.5rem;
     line-height: 2rem;
     text-decoration: none;
@@ -35,7 +34,7 @@ function Nav() {
     }
   `
 
-  const NavLink = styled.a`
+const NavLink = styled.a`
     text-decoration: none;
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -48,10 +47,11 @@ function Nav() {
     }
   `
 
+function Nav() {
   return (
     <Nav>
       <HomeDiv>
-        <Home href="/home">Home</Home>
+        <Home href="/home">Styled Components</Home>
       </HomeDiv>
       <div>
         <NavLink href="/one">One</NavLink>

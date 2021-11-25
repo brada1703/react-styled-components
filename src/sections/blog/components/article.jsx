@@ -1,20 +1,18 @@
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
-function Article(props) {
-  const article = props.props;
-  const textColours = {
-    article: '124, 58, 237',
-    video: '220, 38, 38',
-    'case study': '5, 150, 105'
-  };
-  const bgColours = {
-    article: '237, 233, 254',
-    video: '254, 226, 226',
-    'case study': '209, 250, 229'
-  };
+const textColours = {
+  article: '124, 58, 237',
+  video: '220, 38, 38',
+  'case study': '5, 150, 105'
+};
+const bgColours = {
+  article: '237, 233, 254',
+  video: '254, 226, 226',
+  'case study': '209, 250, 229'
+};
 
-  const SingleArticle = styled.article`
+const SingleArticle = styled.article`
     max-width: 350px;
     width: 100%;
     padding: 0.5rem;
@@ -32,7 +30,7 @@ function Article(props) {
     `}
   `
 
-  const ArticleTag = styled.p`
+const ArticleTag = styled.p`
     --tw-text-opacity: 1;
     color: rgba(${textColours[article.tag]}, var(--tw-text-opacity));
     --tw-bg-opacity: 1;
@@ -50,14 +48,14 @@ function Article(props) {
     margin: 0;
   `
 
-  const ArticleH2 = styled.h2`
+const ArticleH2 = styled.h2`
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
   `
-  const ArticleSummary = styled.p`
+const ArticleSummary = styled.p`
     --tw-text-opacity: 1;
     color: rgba(156, 163, 175, var(--tw-text-opacity));
     font-size: 0.875rem;
@@ -65,36 +63,40 @@ function Article(props) {
     margin: 0;
   `
 
-  const ArticleFooter = styled.footer`
+const ArticleFooter = styled.footer`
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
   `
 
-  const AuthorFigure = styled.figure`
+const AuthorFigure = styled.figure`
     margin-right: 0.5rem;
     margin-left: 0;
   `
 
-  const AuthorImage = styled.img`
+const AuthorImage = styled.img`
     border-radius: 9999px;
     max-height: 2.5rem;
   `
 
-  const AuthorName = styled.p`
+const AuthorName = styled.p`
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 1rem;
     margin:0;
   `
 
-  const ArticleInfo = styled.p`
+const ArticleInfo = styled.p`
     --tw-text-opacity: 1;
     color: rgba(156, 163, 175, var(--tw-text-opacity));
     font-size: 0.75rem;
     line-height: 1rem;
     margin: 0;
   `
+
+function Article(props) {
+  const article = props.props;
+
 
   return (
     <SingleArticle>

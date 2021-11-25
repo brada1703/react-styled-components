@@ -1,6 +1,30 @@
 import Article from "./components/article";
 import styled from 'styled-components';
 
+const HeaderDiv = styled.div`
+    padding: 1rem;
+  `
+
+const HeaderH2 = styled.h2`
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin:0;
+  `
+const HeaderP = styled.p`
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+    padding-bottom: 1rem;
+    margin:0;
+  `
+
+const Section = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+  `
+
 const Blog = () => {
   const articles = [
     {
@@ -31,30 +55,6 @@ const Blog = () => {
       minRead: 11
     }
   ];
-
-  const HeaderDiv = styled.div`
-    padding: 1rem;
-  `
-
-  const HeaderH2 = styled.h2`
-    line-height: 2.5rem;
-    font-weight: 700;
-    font-size: 1.875rem;
-    margin:0;
-  `
-  const HeaderP = styled.p`
-    --tw-text-opacity: 1;
-    color: rgba(156, 163, 175, var(--tw-text-opacity));
-    padding-bottom: 1rem;
-    margin:0;
-  `
-
-  const Section = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1rem;
-  `
 
   return (
     <>
