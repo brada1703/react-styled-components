@@ -3,7 +3,6 @@ import breakpoint from 'styled-components-breakpoint';
 
 function Article(props) {
   const article = props.props;
-  // These colours are meaningless
   const textColours = {
     article: '124, 58, 237',
     video: '220, 38, 38',
