@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
-const Nav = styled.nav`
+const NavBar = styled.nav`
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ const NavLink = styled.a`
 
 function Nav() {
   return (
-    <Nav>
+    <NavBar>
       <HomeDiv>
         <Home href="/home">Styled Components</Home>
       </HomeDiv>
@@ -58,7 +58,7 @@ function Nav() {
         <NavLink href="/two">Two</NavLink>
         <NavLink href="/three">Three</NavLink>
       </div>
-    </Nav>
+    </NavBar>
   );
 }
 

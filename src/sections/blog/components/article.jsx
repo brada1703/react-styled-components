@@ -30,23 +30,7 @@ const SingleArticle = styled.article`
     `}
   `
 
-const ArticleTag = styled.p`
-    --tw-text-opacity: 1;
-    color: rgba(${textColours[article.tag]}, var(--tw-text-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgba(${bgColours[article.tag]}, var(--tw-bg-opacity));
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 1rem;
-    display: inline-block;
-    margin: 0;
-  `
+
 
 const ArticleH2 = styled.h2`
     font-size: 1.125rem;
@@ -97,6 +81,23 @@ const ArticleInfo = styled.p`
 function Article(props) {
   const article = props.props;
 
+  const ArticleTag = styled.p`
+    --tw-text-opacity: 1;
+    color: rgba(${textColours[article.tag]}, var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(${bgColours[article.tag]}, var(--tw-bg-opacity));
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin: 0;
+  `
 
   return (
     <SingleArticle>
